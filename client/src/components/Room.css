@@ -1,0 +1,116 @@
+/* Room.css */
+.room-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to right, #283e51, #485563);
+  font-family: 'Segoe UI', sans-serif;
+  padding: 20px;
+}
+
+.room-box {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(6px);
+  color: white;
+  width: 100%;
+  max-width: 480px;
+  text-align: center;
+  animation: fadeIn 1s ease-out;
+}
+
+.room-title {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.room-subtitle {
+  font-size: 1rem;
+  color: #cfd8dc;
+  margin-bottom: 30px;
+}
+
+.welcome-msg {
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin-bottom: 20px;
+  animation: slideIn 0.8s ease-out;
+}
+
+.room-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.create-btn,
+.join-btn {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.create-btn:hover,
+.join-btn:hover {
+  transform: scale(1.05);
+}
+
+.create-btn {
+  background-color: #4caf50;
+  color: white;
+}
+
+.create-btn:hover {
+  background-color: #388e3c;
+}
+
+.join-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.room-input {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+}
+
+.join-btn {
+  background-color: #2196f3;
+  color: white;
+}
+
+.join-btn:hover {
+  background-color: #1976d2;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
