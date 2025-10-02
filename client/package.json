@@ -45,8 +45,10 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "monaco-editor-webpack-plugin": "^7.1.0",
     "react-app-rewired": "^2.2.1"
   },
-  "proxy": "http://localhost:5000"
+  "proxy": "http://localhost:5000",
+  "homepage": "https://RISHABHOJHA9.github.io/nextgen-code-editor"
 }
